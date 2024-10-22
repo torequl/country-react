@@ -1,0 +1,23 @@
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0026ff;
+  cursor: pointer;
+  color: #fcfcfc;
+}
+button:hover {
+  border-color: #0009ab;
+}

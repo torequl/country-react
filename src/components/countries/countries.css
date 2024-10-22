@@ -1,0 +1,13 @@
+.countries-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .countries-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+}
