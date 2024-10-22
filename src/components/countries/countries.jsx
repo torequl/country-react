@@ -21,15 +21,18 @@ const Countries = () => {
     return (
         <div>
             <h2>Countries: {countries.length}</h2>
-            <div>
+            <div className="country-list">
                 <h4>Visited Countries: {visitedCountries.length}</h4>
-                <ul>
+                <div className="flex">
                     {
-                        visitedCountries.map(i => <li key={i.cca3}>
-                            {i.name.common}
-                        </li>)
+                        visitedCountries.map(i =>
+                            <div key={i.cca3} className="flex">
+                                <p>{i.name.common}</p>
+                                <img src={i.flags.png} />
+                            </div>
+                        )
                     }
-                </ul>
+                </div>
             </div>
             <div className="countries-container">
                 {
